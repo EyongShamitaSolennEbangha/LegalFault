@@ -83,7 +83,7 @@ export default function Header() {
       <nav className="text-gray-500 flex gap-14 text-[19px]">
         <a href="#home">Home</a>
         <a href="#features">Features</a>
-        <a href="#how">How It Works</a>
+        <a href="#how">How</a>
         <a href="#pricing">Pricing</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
