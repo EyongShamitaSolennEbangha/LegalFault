@@ -51,7 +51,7 @@ html {
     width: 300px;
   }
   #secure7 {
-    width: 420px;
+    width: 447px;
   }
   #secure8 {
     font-size: 13px;
@@ -84,7 +84,7 @@ html {
     display: none;
   }
   #blue {
-    width: 420px;
+    width: 447px;
   }
   #shift {
     margin-left: 4px;
@@ -109,23 +109,16 @@ html {
   #test {
     width: 280px;
     font-size: 20px;
+    margin-left: 70px;
    
   }
-  #test2 {
-     width: 280px;
-    font-size: 20px;
-   
-  }
-  #test3 {
-   width: 280px;
-   font-size: 20px;
-    
-  }
+
   #block {
     display: none;
   }
   #price {
     width: 300px;
+    margin-left: 70px;
  
   }
   #white {
@@ -143,15 +136,11 @@ html {
   }
   #card1 {
     width: 250px;
-    align-items: center;
-    align-self: center;
-    align-self: center;
+    margin-left: 90px;
   }
   #font {
     font-size: 16px;
   }
-  #Header{
-    margin-right: 500px;
-  }
+
 }
 

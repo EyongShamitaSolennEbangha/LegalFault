@@ -103,7 +103,7 @@ export default function Body() {
           </h3>
         </div>
 
-        <div id="bodyflex" className="flex justify-around mt-10">
+        <div id="bodyflex" className="flex justify-around ">
           <div className="ml-10">
             <h1 id="secure" className="text-9xl bg-gradient-to-r from-black via-purple-500 to-indigo-500 bg-clip-text text-transparent font-extrabold">
               Secure Legal Document Hub Made Simple
@@ -167,7 +167,7 @@ export default function Body() {
         </div>
 
         {/* Features Section */}
-        <div id="secure7" className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-32 mt-20">
+        <div id="secure7" className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-22 mt-20">
           <div id="secure8" className="flex items-center space-x-2 border-[1px] p-3 rounded-full text-blue-600">
             <ImPower />
             <h2>Powerful Features</h2>

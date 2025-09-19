@@ -37,7 +37,7 @@ function Testimony() {
           </div>
 
           {/* Testimonial 2 */}
-          <div id='test2' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='test' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-6">
               <div className="text-blue-600 text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-sm leading-relaxed">
@@ -57,7 +57,7 @@ function Testimony() {
           </div>
 
           {/* Testimonial 3 */}
-          <div id='test3' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='test' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-6">
               <div className="text-blue-600 text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-sm leading-relaxed">
