@@ -4,7 +4,7 @@ import { Shield, Lock, CheckCircle, Clock, Eye } from "lucide-react";
 function Square() {
   return (
     <div>
-      <div className="bg-white rounded-3xl shadow-lg p-12 relative overflow-hidden">
+      <div id="white" className="bg-white rounded-3xl shadow-lg p-12 relative overflow-hidden">
         {/* Security Badge */}
         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-8">
           <Shield className="w-4 h-4" />
@@ -14,7 +14,7 @@ function Square() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 id="square" className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Enterprise-Grade{" "}
               <span className="bg-blue-600 text-white px-3 py-1 rounded-lg">
                 Security

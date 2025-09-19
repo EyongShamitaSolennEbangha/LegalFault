@@ -6,10 +6,10 @@ function Testimony() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 id='say' className="text-4xl font-bold text-gray-900 mb-4">
             What Legal Professionals <span className="text-blue-600">Say</span>
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p id='textt' className="text-gray-600 text-lg max-w-2xl mx-auto">
             Hear from lawyers and law firms who have transformed their document management with LegalVault.
           </p>
         </div>
@@ -17,7 +17,7 @@ function Testimony() {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {/* Testimonial 1 */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='test' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-6">
               <div className="text-blue-600 text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-sm leading-relaxed">
@@ -37,7 +37,7 @@ function Testimony() {
           </div>
 
           {/* Testimonial 2 */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='test2' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-6">
               <div className="text-blue-600 text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-sm leading-relaxed">
@@ -57,7 +57,7 @@ function Testimony() {
           </div>
 
           {/* Testimonial 3 */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='test3' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-6">
               <div className="text-blue-600 text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-sm leading-relaxed">
@@ -84,7 +84,7 @@ function Testimony() {
           </p>
           
           {/* Logo placeholders */}
-          <div className="flex justify-center items-center space-x-12 opacity-40">
+          <div id='block' className="flex justify-center items-center space-x-12 opacity-40">
             <div className="w-24 h-12 bg-gray-300 rounded"></div>
             <div className="w-24 h-12 bg-gray-300 rounded"></div>
             <div className="w-24 h-12 bg-gray-300 rounded"></div>

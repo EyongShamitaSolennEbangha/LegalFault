@@ -20,7 +20,7 @@ const LegalVaultDashboard = () => {
   }, []);
 
   return (
-    <div className="h-fit bg-white shadow-md p-4 font-sans rounded-2xl">
+    <div id="secure4" className="h-fit w-[400px] bg-white shadow-md p-4 font-sans rounded-2xl">
       <div className="max-w-4xl mx-auto">
         {/* Header with time */}
         <div className="flex justify-between items-center mb-8">
@@ -75,9 +75,9 @@ const LegalVaultDashboard = () => {
           </h2>
 
           <div className="bg-white rounded-lg border border-gray-300 p-4 mb-4">
-            <div className="flex justify-between items-center">
+            <div id="secure5" className="flex justify-between items-center">
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                <div className="w-[100px] h-[100px] bg-blue-100 rounded-lg flex items-center justify-center mr-3">
                   <svg
                     className="w-6 h-6 text-blue-600"
                     fill="none"
@@ -100,7 +100,7 @@ const LegalVaultDashboard = () => {
                   <div className="flex items-center text-sm text-gray-600">
                     <span className="text-green-600 flex items-center mr-3">
                       <svg
-                        className="w-4 h-4 mr-1"
+                        className="w-2 h-2 mr-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -130,10 +130,10 @@ const LegalVaultDashboard = () => {
             <input
               type="text"
               placeholder="Search"
-              className="w-[200px] h-[50px] pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-[100px] h-[50px] pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             <svg
-              className="w-5 h-5 text-gray-400 absolute left-3 top-2.5"
+              className="w-2 h-2 text-gray-400 absolute left-3 top-2.5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

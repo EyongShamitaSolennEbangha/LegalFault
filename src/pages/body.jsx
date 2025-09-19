@@ -92,7 +92,7 @@ export default function Body() {
 
       {/* Body */}
       <main id="home" className="pt-44">
-        <div className="flex items-center bg-white shadow-md w-fit gap-[10px] p-3 rounded-full ml-10">
+        <div id="trusted" className="flex items-center bg-white shadow-md w-fit gap-[10px] p-3 rounded-full ml-10">
           <p>Trusted by 500+ law firms worldwide</p>
           <h3 className="flex text-yellow-500">
             <CiStar />
@@ -103,13 +103,13 @@ export default function Body() {
           </h3>
         </div>
 
-        <div className="flex justify-around mt-10">
+        <div id="bodyflex" className="flex justify-around mt-10">
           <div className="ml-10">
-            <h1 className="text-8xl bg-gradient-to-r from-black via-purple-500 to-indigo-500 bg-clip-text text-transparent font-extrabold">
+            <h1 id="secure" className="text-9xl bg-gradient-to-r from-black via-purple-500 to-indigo-500 bg-clip-text text-transparent font-extrabold">
               Secure Legal Document Hub Made Simple
             </h1>
 
-            <h2 className="text-2xl mt-10 text-gray-600 leading-loose ">
+            <h2 id="secure2" className="text-2xl mt-10 text-gray-600 leading-loose ">
               Upload, organize, and securely manage all your legal <br />
               documents in one place.
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent font-bold">
@@ -119,7 +119,7 @@ export default function Body() {
               — just simple, powerful document <br /> management.
             </h2>
 
-            <div className="flex gap-7 mt-5">
+            <div id="secure3"   className="flex gap-7 mt-5">
               <button className="bg-gradient-to-r from-blue-400 to-indigo-500 p-4 w-[240px] text-white font-semibold rounded-md">
                 Start Free trial
               </button>
@@ -135,7 +135,7 @@ export default function Body() {
         </div>
 
         {/* Stats Section */}
-        <div className="flex items-center justify-evenly w-[1000px] p-[50px] bg-white shadow-xl mt-[60px] mx-auto">
+        <div id="secure77" className="flex items-center justify-evenly w-[1000px] p-[50px] bg-white shadow-xl mt-[60px] mx-auto">
           <div>
             <h3 className="ml-5 text-blue-600 text-2xl">
               <GiProgression />
@@ -167,14 +167,14 @@ export default function Body() {
         </div>
 
         {/* Features Section */}
-        <div className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-32 mt-20">
-          <div className="flex items-center space-x-2 border-[1px] p-3 rounded-full text-blue-600">
+        <div id="secure7" className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-32 mt-20">
+          <div id="secure8" className="flex items-center space-x-2 border-[1px] p-3 rounded-full text-blue-600">
             <ImPower />
             <h2>Powerful Features</h2>
           </div>
 
           <div className="text-7xl font-bold mt-6">
-            <h2>
+            <h2 id="secure9">
               Everything You Need <br />
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent font-bold">
                 Built for Legal Teams
@@ -183,7 +183,7 @@ export default function Body() {
           </div>
 
           <div className="mt-12 max-w-2xl">
-            <h2 className="text-gray-600 text-base font-semibold">
+            <h2 id="secure10" className="text-gray-600 text-base font-semibold">
               Our comprehensive document management system is designed
               specifically for legal <br /> professionals, with the features you
               need to work efficiently and securely.

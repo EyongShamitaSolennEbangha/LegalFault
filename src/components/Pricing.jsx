@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 function Pricing() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div className="min-h-screen  bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -18,7 +18,7 @@ function Pricing() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {/* Starter Plan */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='price' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
               <p className="text-gray-600 text-sm mb-6">
@@ -59,7 +59,7 @@ function Pricing() {
           </div>
 
           {/* Professional Plan */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-blue-600 relative">
+          <div id='price' className="bg-white rounded-lg shadow-lg p-8 border-2 border-blue-600 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                 Most Popular
@@ -106,7 +106,7 @@ function Pricing() {
           </div>
 
           {/* Enterprise Plan */}
-          <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <div id='price' className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Enterprise</h3>
               <p className="text-gray-600 text-sm mb-6">

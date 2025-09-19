@@ -4,9 +4,9 @@ function Fotter() {
   return (
     <div>
       {/* Call-to-Action Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-20 px-4 w-[90pc]">
+      <div id='blue' className="bg-gradient-to-r from-blue-600 to-purple-600 py-20 px-4 w-[90pc]">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-12 text-center shadow-xl">
+          <div id='shift' className="bg-white rounded-2xl p-12 text-center shadow-xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Ready to Transform Your Document Management?
             </h2>
@@ -32,23 +32,23 @@ function Fotter() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16 px-4">
+      <footer className="bg-gray-900  text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             {/* Logo and Description */}
             <div className="md:col-span-1">
-              <div className="flex items-center mb-4">
+              <div id='center' className="flex items-center mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-2">
                   <span className="text-white font-bold text-sm">LV</span>
                 </div>
                 <span className="text-xl font-bold">LegalFault</span>
               </div>
-              <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+              <p id='text' className="text-gray-400 text-sm mb-6 leading-relaxed">
                 Secure document management solution designed specifically for legal professionals.
               </p>
               
               {/* Social Icons */}
-              <div className="flex space-x-3">
+              <div id='centers' className="flex space-x-3">
                 <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-gray-700 cursor-pointer transition-colors">
                   <span className="text-xs">f</span>
                 </div>

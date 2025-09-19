@@ -10,7 +10,7 @@ function How() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             How It <span className="text-blue-600">Works</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p id='font' className="text-gray-600 text-lg max-w-2xl mx-auto">
             Get started with LegalVault in just a few simple steps and transform how you manage
             legal documents.
           </p>
@@ -19,7 +19,7 @@ function How() {
         {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Step 1 */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+          <div id='card1' className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-blue-100 text-blue-600 text-sm font-semibold px-2 py-1 rounded">
                 01
@@ -37,7 +37,7 @@ function How() {
           </div>
 
           {/* Step 2 */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+          <div id='card1' className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-blue-100 text-blue-600 text-sm font-semibold px-2 py-1 rounded">
                 02
@@ -55,7 +55,7 @@ function How() {
           </div>
 
           {/* Step 3 */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+          <div id='card1' className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-blue-100 text-blue-600 text-sm font-semibold px-2 py-1 rounded">
                 03
@@ -73,7 +73,7 @@ function How() {
           </div>
 
           {/* Step 4 */}
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+          <div id='card1' className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-blue-100 text-blue-600 text-sm font-semibold px-2 py-1 rounded">
                 04

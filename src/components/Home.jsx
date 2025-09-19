@@ -33,34 +33,25 @@
 //   return <Particles id="tsparticles" init={particlesInit} options={particlesConfig} />
 
 // }
-import React from "react";
-import {  Navigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
-  const goToPage = () => {
-    navigate("/signup"); // ✅ works now
-  };
-  
-  const goToLogin = () => {
-    navigate("/login");
-  };
+
+
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Menu, X } from "lucide-react"; // for hamburger/close icons
 
 export default function Header() {
- const navigate = useNavigate(); // ✅ hook
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const goToPage = () => {
-    navigate("/signup"); // ✅ works now
-  };
-  
-  const goToLogin = () => {
-    navigate("/login");
-  };
-
-
-
+  const goToPage = () => navigate("/signup");
+  const goToLogin = () => navigate("/login");
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-around p-7 gap-[100px] bg-white/30 ">
+    <header
+      id="Header"
+      className="fixed top-0 left-0 w-full z-50 flex items-center justify-around p-7 sm:gap-[10px] md:gap-[20px] gap-[100px] bg-white/30"
+    >
       {/* Gradient bottom border */}
       <span
         className="absolute left-0 bottom-0 w-full h-[1px] 
@@ -74,13 +65,13 @@ export default function Header() {
         <h2 className="text-white bg-[#194de8] font-semibold p-4 rounded-xl">
           LF
         </h2>
-        <h2 className=" font-bold bg-gradient-to-r from-black via-blue-500 to-indigo-500 bg-clip-text text-transparent text-xl">
+        <h2 className="font-bold bg-gradient-to-r from-black via-blue-500 to-indigo-500 bg-clip-text text-transparent text-xl">
           LegalFault
         </h2>
       </div>
 
-      {/* Nav */}
-      <nav className="text-gray-500 flex gap-14 text-[19px]">
+      {/* Desktop Nav */}
+      <nav className="hidden md:flex text-gray-500 gap-14 text-[19px]">
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#how">How</a>
@@ -89,13 +80,51 @@ export default function Header() {
         <a href="#contact">Contact</a>
       </nav>
 
-      {/* Auth */}
-      <div className="flex gap-10 items-center text-[19px]">
-        <h2 onClick={goToLogin} className="text-[#194de8]">LogIn</h2>
-        <button   onClick={goToPage}  className="bg-[#194de8] text-white p-2 w-[140px] items-center rounded-md">
+      {/* Desktop Auth */}
+      <div className="hidden md:flex gap-10 items-center text-[19px]">
+        <h2 onClick={goToLogin} className="text-[#194de8] cursor-pointer">
+          LogIn
+        </h2>
+        <button
+          onClick={goToPage}
+          className="bg-[#194de8] text-white p-2 w-[140px] items-center rounded-md"
+        >
           Get Started
         </button>
       </div>
+
+      {/* Mobile Hamburger */}
+      <button
+        className="md:hidden text-[#194de8]"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X size={26} /> : <Menu size={26} />}
+      </button>
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-[200px] flex flex-col items-center gap-3 py-4 bg-white shadow-md md:hidden text-[17px]">
+          <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#features" onClick={() => setIsOpen(false)}>Features</a>
+          <a href="#how" onClick={() => setIsOpen(false)}>How</a>
+          <a href="#pricing" onClick={() => setIsOpen(false)}>Pricing</a>
+          <a href="#testimonials" onClick={() => setIsOpen(false)}>Testimonials</a>
+          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+
+          <h2
+            onClick={() => { goToLogin(); setIsOpen(false); }}
+            className="text-[#194de8] cursor-pointer"
+          >
+            LogIn
+          </h2>
+          <button
+            onClick={() => { goToPage(); setIsOpen(false); }}
+            className="bg-[#194de8] text-white p-2 w-[140px] rounded-md"
+          >
+            Get Started
+          </button>
+        </div>
+      )}
     </header>
   );
 }

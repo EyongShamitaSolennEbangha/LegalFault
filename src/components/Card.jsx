@@ -60,30 +60,37 @@ function Card() {
   ];
 
   return (
-    <div>
+    <div className="px-4 py-10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid layout */}
+        <div 
+          id="Card" 
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center"
+        >
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
-              <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div 
+                key={index} 
+                className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow duration-300 w-full max-w-[400px]"
+              >
                 {/* Badge */}
-                <div className={`inline-flex items-center ${feature.badgeColor} text-sm font-medium px-3 py-1 rounded-full mb-6`}>
+                <div className={`inline-flex items-center ${feature.badgeColor} text-xs sm:text-sm font-medium px-3 py-1 rounded-full mb-4 sm:mb-6`}>
                   {feature.badge}
                 </div>
                 
                 {/* Icon Container */}
-                <div className={`w-16 h-16 ${feature.iconBg} rounded-2xl flex items-center justify-center mb-6`}>
-                  <IconComponent className={`w-8 h-8 ${feature.iconColor}`} />
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 ${feature.iconBg} rounded-2xl flex items-center justify-center mb-4 sm:mb-6`}>
+                  <IconComponent className={`w-6 h-6 sm:w-8 sm:h-8 ${feature.iconColor}`} />
                 </div>
                 
                 {/* Title */}
-                <h2 className="text-xl font-bold text-gray-900 mb-4">
+                <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-4 text-center">
                   {feature.title}
                 </h2>
                 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed text-center">
                   {feature.description}
                 </p>
               </div>
@@ -96,3 +103,4 @@ function Card() {
 }
 
 export default Card;
+
