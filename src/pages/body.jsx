@@ -167,7 +167,7 @@ export default function Body() {
         </div>
 
         {/* Features Section */}
-        <div id="secure7" className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-22 mt-20">
+        <div id="secure7" className="bg-[#f7fbff] flex flex-col items-center justify-center text-center p-[30px] mt-20">
           <div id="secure8" className="flex items-center space-x-2 border-[1px] p-3 rounded-full text-blue-600">
             <ImPower />
             <h2>Powerful Features</h2>
